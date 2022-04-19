@@ -1,5 +1,3 @@
-package com.ruoyi.web.controller.common.parallel;
-
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;

@@ -1,5 +1,3 @@
-package com.ruoyi.web.controller.common;
-import com.google.common.collect.Maps;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -23,7 +21,7 @@ public class TestStream {
         list3.forEach(System.out::print);
         System.out.println("------------------------");
         //获取map的值
-        Map <String,String> map1 = Maps.newHashMap();
+        Map <String,String> map1 = new HashMap<>();
         IntStream.rangeClosed(1,10).forEach(i->map1.put(String.valueOf(i),"str"+i));
         List<String> list4 = map1.entrySet().stream().map(m->m.getValue()).collect(Collectors.toList());
         list4.forEach(System.out::print);
